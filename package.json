@@ -47,6 +47,20 @@
   },
   "jest": {
     "preset": "react-native",
+    "collectCoverage": true,
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|react-native-phone-number-input|react-native-country-picker-modal|@react-native|react-native-biometrics|@react-native-firebase|@journey|react-native-check-app-install|@react-navigation|@react-native-community|@fortawesome|react-native-push-notification|react-native-signature-capture|react-native-text-input-mask|react-native-keyboard-aware-scrollview|react-native-size-matters|react-native-vector-icons|react-native-lightbox|react-native-typing-animation|react-native-communications|react-native-parsed-text|react-native-ratings|react-native-iphone-x-helper|react-native-elements|react-navigation|react-navigation-tabs|react-navigation-redux-helpers|react-native-safari-view|react-native-linear-gradient|react-native-blur|react-native-animatable|react-native-wkwebview-reborn|react-native-safe-area-view|react-native-popup-menu|redux-persist)/)"
+    ],
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js"
+    ],
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/mock/fileMock.js"
+    },
     "moduleFileExtensions": [
       "ts",
       "tsx",
