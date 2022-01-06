@@ -1,7 +1,7 @@
 {
   "name": "@muralijourney/typescript009",
   "repository":"https://github.com/muralijourney/typescriptpot",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
